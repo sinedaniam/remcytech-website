@@ -91,18 +91,18 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;op
 .brand-mark{width:38px;height:38px;border-radius:12px;background:#fff;display:grid;place-items:center;overflow:hidden}
 .brand-mark img{width:100%;height:100%;object-fit:cover}
 .nav-links{display:none;gap:4px;padding:4px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
-.nav-links a{position:relative;padding:8px 16px;border-radius:999px;font-size:14px;color:var(--muted);transition:color .3s}
+.nav-links a{white-space:nowrap;position:relative;padding:8px 16px;border-radius:999px;font-size:14px;color:var(--muted);transition:color .3s}
 .nav-links a:hover,.nav-links a.active{color:var(--text)}
 .nav-links a.active{background:var(--surface-2)}
-@media(min-width:960px){.nav-links{display:flex}}
+@media(min-width:1100px){.nav-links{display:flex}}
 .btn.nav-cta{display:none}
-@media(min-width:960px){.btn.nav-cta{display:inline-flex}}
+@media(min-width:1100px){.btn.nav-cta{display:inline-flex}}
 .burger{width:44px;height:44px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center}
 .burger span{display:block;width:18px;height:1.5px;background:#fff;transition:transform .4s var(--ease)}
 .burger span+span{margin-top:5px}
 .menu-open .burger span:first-child{transform:translateY(3.25px) rotate(45deg)}
 .menu-open .burger span:last-child{transform:translateY(-3.25px) rotate(-45deg)}
-@media(min-width:960px){.burger{display:none}}
+@media(min-width:1100px){.burger{display:none}}
 .mobile-menu{position:fixed;inset:0;z-index:85;background:rgba(6,8,13,.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);display:flex;flex-direction:column;justify-content:center;padding:0 24px;gap:6px;clip-path:circle(0 at calc(100% - 44px) 44px);transition:clip-path .8s var(--ease)}
 .menu-open .mobile-menu{clip-path:circle(150% at calc(100% - 44px) 44px)}
 .mobile-menu a{font-family:var(--display);font-size:clamp(36px,11vw,56px);font-weight:700;letter-spacing:-.03em;line-height:1.15;opacity:0;transform:translateY(30px);transition:opacity .5s,transform .6s var(--ease)}
